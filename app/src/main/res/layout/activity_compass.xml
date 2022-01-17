@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Compass"
+    android:background="@drawable/compass_2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="이름"
+                android:id="@+id/editText_main_name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="37.54156134044039"
+                android:id="@+id/editText_latitude" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="127.0769017322588"
+                android:id="@+id/editText_longitude" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주변 100m 이내 건물"
+                android:id="@+id/button_get_name" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insert"
+                android:id="@+id/button_insert" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="현재 위치 반환"
+                android:id="@+id/button_gps" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:visibility="invisible"
+    android:id="@+id/listView_main_list"/>
+
+<TextView
+    android:id="@+id/textView_main_result"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:visibility="invisible"/>
+
+
+</LinearLayout>

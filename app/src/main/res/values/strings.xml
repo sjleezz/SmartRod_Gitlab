@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SmartRod</string>
+    <string name="name">이성재</string>
+    <string name="address">서울시</string>
+    <string name="tel">01097267772</string>
+    <string name="tfe_od_app_name">ObjectDetector</string>
+    <string name="Caller">긴급전화</string>
+    <string name="Caller_register">전화 번호 등록</string>
+    <string name="Caller_connect">전화 연결</string>
+    <string name="Compass">건물 위치 찾기</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+</resources>

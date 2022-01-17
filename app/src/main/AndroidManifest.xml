@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tensorflow.lite.examples.detection">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_smartrod"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        android:roundIcon="@mipmap/ic_smartrod_round"
+        android:supportsRtl="true"
+
+        tools:replace="android:allowBackup,android:label">
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".YoloActivity"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Main"
+            android:label="@string/tfe_od_app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".Recognition"></service>
+
+        <activity
+            android:name=".DetectorActivity"
+            android:label="@string/tfe_od_app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/tfe_od_app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".__TTS__"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Caller_register"
+            android:label="@string/Caller_register"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Caller_connect"
+            android:label="@string/Caller_connect"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Compass"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+    </application>
+</manifest>
